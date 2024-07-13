@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './components/Home.jsx';
-import Footer from './components/Footer.jsx';
+import Home from './components/Home';
+import Footer from './components/Footer';
+import Videos from './components/Videos';
+import Upload from './components/Upload';
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/videos" element={<Videos />} />
+        <Route path="/upload" element={<Upload />} />
       </Routes>
       <Footer/>
     </Router>
