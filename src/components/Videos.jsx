@@ -39,8 +39,7 @@ const Videos = () => {
        p="8" 
        spacing={"8"} 
        overflowY={'auto'}
-       >
-        
+       >      
         {videosArr.map((item, index) =>(
             <Button 
                variant={'ghost'} 
@@ -49,11 +48,9 @@ const Videos = () => {
                >
                 Lecture {index + 1}
             </Button>
-        ))}
-            
-      </VStack>
+        ))}          
+      </VStack> 
     </Stack>
   );
 };
-
 export default Videos;
